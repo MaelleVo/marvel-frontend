@@ -1,0 +1,226 @@
+/* ALL ELEMENT */
+
+* {
+  text-align: center;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.none {
+  display: none;
+}
+
+/* FONTS */
+@font-face {
+  font-family: "BlackWidow";
+  src: local("BlackWidowMovie"),
+    url("./fonts/BlackWidowMovie-d95Rg.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AvengeanceNormal";
+  src: local("AvengeanceNormal"),
+    url("./fonts/AvengeanceHeroicAvengerNormal-Bz7d.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AvengeanceRegular";
+  src: local("AvengeanceRegular"),
+    url("./fonts/AvengeanceMightiestAvenger-837g.ttf") format("truetype");
+}
+
+/* HEADER */
+
+header {
+  height: 100px;
+  background-color: #141414;
+  display: flex;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .div-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+header img {
+  height: 60px;
+}
+
+/* SEARCH BAR */
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  margin: 0 10px;
+}
+
+.search-bar input {
+  height: 30px;
+  border-radius: 5px;
+  width: 800px;
+  background-color: #ee291f;
+  border: none;
+}
+
+.search-bar input::placeholder {
+  color: white;
+  text-align: center;
+  padding-left: 10px;
+}
+
+/* BUTTONS PAGE */
+
+.button-settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.button-page {
+  background-color: #141414;
+  color: white;
+  border: 1px solid #ee291f;
+  height: 30px;
+  width: 150px;
+  font-family: "BlackWidow";
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.button-page:hover {
+  background-color: #ee291f;
+  transition: 0.7s;
+  box-shadow: 0 3px 8px 0 #ee291f, 0 17px 50px 0 #ee291f;
+}
+.button-page2 {
+  background-color: #ee291f;
+  color: white;
+  border: none;
+  height: 30px;
+  width: 150px;
+  font-family: "BlackWidow";
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button-page2:hover {
+  background-color: #ee291f;
+  transition: 0.7s;
+  box-shadow: 0 3px 8px 0 #ee291f, 0 17px 50px 0 #ee291f;
+}
+
+/* HOME PAGE  */
+
+.marvel-bg {
+  height: 780px;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* COMICS SECTION */
+
+.section-comics {
+  /* border: 1px green solid; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.wrap-section-comics {
+  border: 2px black solid;
+  border-radius: 5px;
+}
+
+.comic-card {
+  width: 200px;
+  /* border: 1px solid red; */
+}
+
+.comic-card img {
+  width: 100%;
+}
+
+.top-card-section {
+  background-color: #141414;
+  height: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.heart-favorite {
+  position: absolute;
+  color: white;
+  margin-right: 10px;
+}
+
+/* CHARACTER STICKER WITH COMICS */
+.character-list-comics {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* CHARACTERS PAGE */
+.section-characters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.sticker-characters {
+  width: 200px;
+}
+
+.sticker-characters img {
+  width: 100%;
+}
+
+.top-card-characters {
+  background-color: #141414;
+  height: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: #141414;
+}
+
+footer p {
+  color: #141414;
+  font-family: "AvengeanceRegular";
+  font-weight: normal;
+}
+
+footer p:hover {
+  color: white;
+  font-family: "AvengeanceRegular";
+  font-weight: normal;
+}
