@@ -21,10 +21,24 @@ const Comic = () => {
     fetchData();
   }, [id]);
 
-  let url = "";
+  let url;
   if (comic.thumbnail) {
     url = `${comic.thumbnail.path}/portrait_xlarge.${comic.thumbnail.extension}`;
   }
+
+  // const url =
+  //   comic.thumbnail.path +
+  //   "/" +
+  //   "portrait_xlarge" +
+  //   "." +
+  //   comic.thumbnail.extension;
+
+  // console.log(comic);
+  // console.log(comic.thumbnail);
+  // console.log(comic.thumbnail.path);
+  // console.log(comic.thumbnail.extension);
+
+  // console.log(url);
 
   return isLoading ? (
     <span>En cours de chargement...</span>

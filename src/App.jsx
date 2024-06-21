@@ -21,6 +21,7 @@ import Comic from "./pages/Comic";
 import Character from "./pages/Character";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
+import Page404 from "./pages/Page404";
 
 const App = () => {
   const [search, setSearch] = useState("");
@@ -41,6 +42,7 @@ const App = () => {
           <Route path="/favorites" element={<Favorites />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
+          <Route path="*" element={<Page404 />} />
         </Routes>
         <Footer />
       </div>

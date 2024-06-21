@@ -4,6 +4,12 @@
   text-align: center;
   box-sizing: border-box;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }
 
 .container {
@@ -126,10 +132,20 @@ header img {
 /* HOME PAGE  */
 
 .marvel-bg {
-  height: 780px;
+  height: 84vh;
 }
 
 video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-404 {
+  height: 84vh;
+}
+
+.section-404 img {
   width: 100%;
   height: 100%;
   object-fit: cover;

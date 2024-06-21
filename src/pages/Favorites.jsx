@@ -29,7 +29,6 @@ const Favorites = () => {
   };
 
   useEffect(() => {
-    // Charger les favoris depuis les cookies lors du montage du composant
     const savedFavorites = Cookies.get("favorites");
     if (savedFavorites) {
       try {
