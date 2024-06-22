@@ -84,7 +84,7 @@ const Signup = () => {
           </button>
           <Link to="/login" style={{ textDecoration: "none" }}>
             <p className="link-account">
-              Tu as déjà un compte ? Connecte-toi !
+              Tu as déjà un compte ? Connecte-toi ici !
             </p>
           </Link>
         </form>
