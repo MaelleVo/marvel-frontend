@@ -131,14 +131,14 @@ const Characters = () => {
           </div>
         ) : (
           <button className="button-page hidden" onClick={previousPage}>
-            <FontAwesomeIcon icon="arrow-right" />
+            <FontAwesomeIcon icon="arrow-left" />
           </button>
         )}
         <span className="current-page">{currentPage}</span>
         {data && (
           <div className="button-holder">
             <button className="button-page" onClick={nextPage}>
-              Suivant
+              <FontAwesomeIcon icon="arrow-right" />
             </button>
           </div>
         )}
