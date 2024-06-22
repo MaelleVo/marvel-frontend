@@ -288,6 +288,12 @@ video {
   text-decoration: none;
 }
 
+/* FAVORITES */
+
+.section-favorites {
+  display: flex;
+}
+
 /* FOOTER */
 
 footer {

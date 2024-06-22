@@ -47,7 +47,7 @@ const Favorites = () => {
   return (
     <div>
       <h2>Vos Favoris</h2>
-      <div className="section-comics">
+      <div className="section-favorites">
         {token && favorites.length > 0 ? (
           favorites.map((result) => {
             const url =
