@@ -17,13 +17,13 @@ const Favorites = () => {
   const addFav = (comic) => {
     const newFavorites = [...favorites, comic];
     setFavorites(newFavorites);
-    Cookies.set("favorites", JSON.stringify(newFavorites), { expires: 7 });
+    Cookies.set("favorites", JSON.stringify(newFavorites), { expires: 20 });
   };
 
   const removeFav = (comicId) => {
     const newFavorites = favorites.filter((fav) => fav._id !== comicId);
     setFavorites(newFavorites);
-    Cookies.set("favorites", JSON.stringify(newFavorites), { expires: 7 });
+    Cookies.set("favorites", JSON.stringify(newFavorites), { expires: 20 });
   };
 
   const isFavorite = (comicId) => {
@@ -61,7 +61,7 @@ const Favorites = () => {
               result.thumbnail.extension;
             const comicId = result._id;
             return (
-              <div className="wrap-section-comics" key={comicId}>
+              <div className="wrap-section-favorites" key={comicId}>
                 <div className="comic-card">
                   {isFavorite(comicId) ? (
                     <FontAwesomeIcon
@@ -86,7 +86,7 @@ const Favorites = () => {
             );
           })
         ) : (
-          <p>Pas de favoris pour le moment.</p>
+          <p className="no-favorite">Pas de favoris pour le moment...</p>
         )}
       </div>
     </div>

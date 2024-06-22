@@ -48,6 +48,12 @@ body {
     url("./fonts/AvengeanceMightiestAvenger-837g.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Death";
+  src: local("DeathRegular"),
+    url("./fonts/DeatheMaachNcv-2ejv.ttf") format("truetype");
+}
+
 /* HEADER */
 
 header {
@@ -145,8 +151,9 @@ header img {
 }
 
 .current-page {
-  color: #ee291f;
-  font-family: "BlackWidow";
+  color: white;
+  font-family: "Death";
+  font-size: 22px;
 }
 
 /* HOME PAGE  */
@@ -208,11 +215,32 @@ video {
 
 .comic-card {
   width: 200px;
-  /* border: 1px solid red; */
+  height: 430px;
+  background-color: #141414;
+  border-radius: 5px;
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
 }
 
 .comic-card img {
   width: 100%;
+}
+
+.comic-card h3 {
+  color: white;
+  font-family: "Death";
+  font-size: 22px;
+  margin-top: 5px;
+  margin-bottom: 12px;
+  height: 40px;
+}
+
+.comic-card p {
+  font-family: "BlackWidow";
+  color: white;
+  overflow: hidden;
+  font-size: 12px;
+  padding: 0 2px;
+  height: 35px;
 }
 
 .top-card-section {
@@ -259,7 +287,7 @@ video {
 
 .sticker-characters h3 {
   color: white;
-  font-family: "BlackWidow";
+  font-family: "Death";
   font-size: 22px;
   margin-top: 5px;
   margin-bottom: 12px;
@@ -305,8 +333,18 @@ video {
   display: flex;
   justify-content: center;
   gap: 20px;
-  flex-wrap: wrap;
   margin-top: 50px;
+}
+
+.wrap-section-favorites {
+  flex-wrap: wrap;
+}
+
+.no-favorite {
+  color: white;
+  font-family: "AvengeanceRegular";
+  font-size: 20px;
+  margin-top: 20px;
 }
 
 /* FOOTER */

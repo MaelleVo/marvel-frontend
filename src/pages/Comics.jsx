@@ -127,19 +127,14 @@ const Comics = () => {
       </div>
       <div className="section-comics">
         {data.results.map((result) => {
-          const url =
-            result.thumbnail.path +
-            "/" +
-            "portrait_xlarge" +
-            "." +
-            result.thumbnail.extension;
+          const url = result.thumbnail.path + "." + result.thumbnail.extension;
           // console.log(url);
           const comicId = result._id;
           //   console.log(comicId);
           return (
             <div className="wrap-section-comics" key={comicId}>
               <div className="comic-card">
-                <div className="top-card-section">
+                <div className="top-card-characters">
                   {isFavorite(comicId) ? (
                     <FontAwesomeIcon
                       icon="heart"
@@ -156,9 +151,9 @@ const Comics = () => {
                     />
                   )}
                 </div>
-                <Link to={`/comic/${comicId}`}>
+                <Link className="link-characters" to={`/comic/${comicId}`}>
                   <img src={url} alt={url} />
-                  <p>{result.title}</p>
+                  <h3>{result.title}</h3>
                   <p>{result.description}</p>
                 </Link>
               </div>
