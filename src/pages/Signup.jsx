@@ -50,35 +50,39 @@ const Signup = () => {
   return (
     <div className="signup container">
       <h2>S'inscrire</h2>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Nom d'utilisateur"
-          name="username"
-          value={username}
-          onChange={handleUsernameChange}
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          name="email"
-          value={email}
-          onChange={handleEmailChange}
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          name="password"
-          value={password}
-          onChange={handlePasswordChange}
-        />
-        <button type="submit" value="Submit" style={{ cursor: "pointer" }}>
-          S'inscrire
-        </button>
-        <Link to="/login" style={{ textDecoration: "none" }}>
-          <p className="link-account">Tu as déjà un compte ? Connecte-toi !</p>
-        </Link>
-      </form>
+      <section className="signup-section">
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="Nom d'utilisateur"
+            name="username"
+            value={username}
+            onChange={handleUsernameChange}
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            name="email"
+            value={email}
+            onChange={handleEmailChange}
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            name="password"
+            value={password}
+            onChange={handlePasswordChange}
+          />
+          <button type="submit" value="Submit" style={{ cursor: "pointer" }}>
+            S'inscrire
+          </button>
+          <Link to="/login" style={{ textDecoration: "none" }}>
+            <p className="link-account">
+              Tu as déjà un compte ? Connecte-toi !
+            </p>
+          </Link>
+        </form>
+      </section>
     </div>
   );
 };

@@ -46,6 +46,9 @@ header {
   height: 100px;
   background-color: #141414;
   display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 30;
 }
 
 nav {
@@ -151,6 +154,19 @@ video {
   object-fit: cover;
 }
 
+/* SIGN UP */
+
+.signup-section {
+  display: flex;
+  justify-content: center;
+}
+
+.signup-section input {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 /* COMICS SECTION */
 
 .section-comics {
@@ -187,6 +203,7 @@ video {
   position: absolute;
   color: white;
   margin-right: 10px;
+  margin-top: 5px;
 }
 
 /* CHARACTER STICKER WITH COMICS */
@@ -202,21 +219,47 @@ video {
   justify-content: space-between;
   gap: 20px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .sticker-characters {
   width: 200px;
+  height: 320px;
+  background-color: #141414;
+  border-radius: 5px;
 }
 
 .sticker-characters img {
   width: 100%;
 }
 
+.sticker-characters h3 {
+  color: white;
+  font-family: "BlackWidow";
+  font-size: 22px;
+  margin-top: 5px;
+  margin-bottom: 12px;
+  height: 40px;
+}
+
+.sticker-characters p {
+  font-family: "AvengeanceRegular";
+  color: white;
+  text-overflow: ellipsis " [..]";
+  font-size: 12px;
+  padding: 0 4px;
+}
+
 .top-card-characters {
   background-color: #141414;
-  height: 20px;
+  height: 25px;
   display: flex;
   justify-content: flex-end;
+  border-radius: 5px;
+}
+
+.link-characters {
+  text-decoration: none;
 }
 
 /* FOOTER */

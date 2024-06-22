@@ -118,15 +118,19 @@ const Characters = () => {
       />
       <div className="button-settings">
         {currentPage > 1 && (
-          <button className="button-page" onClick={previousPage}>
-            Précédent
-          </button>
+          <div className="button-holder">
+            <button className="button-page" onClick={previousPage}>
+              Precedent
+            </button>
+          </div>
         )}
         <span>Page {currentPage}</span>
         {data && (
-          <button className="button-page" onClick={nextPage}>
-            Suivant
-          </button>
+          <div className="button-holder">
+            <button className="button-page" onClick={nextPage}>
+              Suivant
+            </button>
+          </div>
         )}
       </div>
       <div>
@@ -135,7 +139,7 @@ const Characters = () => {
             const url =
               result.thumbnail.path +
               "/" +
-              "portrait_xlarge" +
+              "standard_xlarge" +
               "." +
               result.thumbnail.extension;
             // console.log(url);
@@ -161,11 +165,15 @@ const Characters = () => {
                       />
                     )}
                   </div>
-                  <Link key={characterId} to={`/character/${characterId}`}>
+                  <Link
+                    key={characterId}
+                    to={`/character/${characterId}`}
+                    className="link-characters"
+                  >
                     <div>
                       <img src={url} alt={url} />
-                      <li>{result.name}</li>
-                      <li>{result.description}</li>
+                      <h3>{result.name}</h3>
+                      <p>{result.description}</p>
                     </div>
                   </Link>
                 </div>
