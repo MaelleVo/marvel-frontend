@@ -72,14 +72,17 @@ const Characters = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/characters`, {
-          params: {
-            name: search,
-            page: currentPage,
-            limit: limit,
-            skip: currentPage,
-          },
-        });
+        const response = await axios.get(
+          `https://site--marvel-backend--q5cw8vtfqtbn.code.run//characters`,
+          {
+            params: {
+              name: search,
+              page: currentPage,
+              limit: limit,
+              skip: currentPage,
+            },
+          }
+        );
         console.log(response.data);
         setData(response.data);
         setIsLoading(false);
