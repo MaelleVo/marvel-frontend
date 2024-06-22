@@ -32,11 +32,14 @@ const Signup = () => {
     event.preventDefault();
     console.log(username, email, password);
     try {
-      const response = await axios.post("http://localhost:3000/signup", {
-        username,
-        email,
-        password,
-      });
+      const response = await axios.post(
+        "https://site--marvel-backend--q5cw8vtfqtbn.code.run/signup",
+        {
+          username,
+          email,
+          password,
+        }
+      );
       console.log(response.data);
       // console.log(response.data.token); // => token here
       const token = response.data.token;

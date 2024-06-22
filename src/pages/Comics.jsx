@@ -60,14 +60,17 @@ const Comics = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/comics", {
-          params: {
-            title: search,
-            page: currentPage,
-            limit: limit,
-            skip: currentPage,
-          },
-        });
+        const response = await axios.get(
+          "https://site--marvel-backend--q5cw8vtfqtbn.code.run/comics",
+          {
+            params: {
+              title: search,
+              page: currentPage,
+              limit: limit,
+              skip: currentPage,
+            },
+          }
+        );
         console.log(response.data);
         console.log(limit);
         console.log(isSearching);

@@ -28,10 +28,13 @@ const Login = () => {
     event.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:3000/login", {
-        email,
-        password,
-      });
+      const response = await axios.post(
+        "https://site--marvel-backend--q5cw8vtfqtbn.code.run/login",
+        {
+          email,
+          password,
+        }
+      );
       console.log(response);
       // console.log(response.data.token); // => token here
       const token = response.data.token;
