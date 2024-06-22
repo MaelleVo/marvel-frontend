@@ -3,7 +3,6 @@
 * {
   text-align: center;
   box-sizing: border-box;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -290,10 +289,24 @@ video {
 
 /* FAVORITES */
 
+.page-favorites {
+  height: 84vh;
+}
+
+.page-favorites h2 {
+  font-family: "BlackWidow";
+  height: 30px;
+  padding-top: 20px;
+  font-size: 40px;
+  color: #ee291f;
+}
+
 .section-favorites {
   display: flex;
+  justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 /* FOOTER */

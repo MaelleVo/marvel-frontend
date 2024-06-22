@@ -7,6 +7,8 @@ import Cookies from "js-cookie";
 // Font Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import bgMovie2 from "/img/bg-animate2.mp4";
+
 const Favorites = () => {
   const token = Cookies.get("token");
 
@@ -45,7 +47,8 @@ const Favorites = () => {
   }, []);
 
   return (
-    <div>
+    <div className="page-favorites">
+      <video src={bgMovie2} autoPlay loop></video>
       <h2>Vos Favoris</h2>
       <div className="section-favorites container">
         {token && favorites.length > 0 ? (
