@@ -4,8 +4,12 @@ import { useState } from "react";
 
 // Font Awesome
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
-library.add(faHeart);
+import {
+  faHeart,
+  faArrowRight,
+  faArrowLeft,
+} from "@fortawesome/free-solid-svg-icons";
+library.add(faHeart, faArrowRight, faArrowLeft);
 
 // COMPONENTS IMPORT
 import Header from "./components/Header";

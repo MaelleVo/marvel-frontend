@@ -118,7 +118,7 @@ const Comics = () => {
             Precedent
           </button>
         )}
-        <span>Page {currentPage}</span>
+        <span className="current-page">{currentPage}</span>
         {data && (
           <button className="button-page" onClick={nextPage}>
             Suivant
