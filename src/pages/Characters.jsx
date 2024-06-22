@@ -11,6 +11,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // Import Components
 import SearchBar from "../components/SearchBar";
 
+import bgMovie2 from "/img/bg-animate2.mp4";
+
 const Characters = () => {
   const [data, setData] = useState();
   const [isLoading, setIsLoading] = useState(true);
@@ -110,6 +112,7 @@ const Characters = () => {
     <span>En cours de chargement...</span>
   ) : (
     <section className="container">
+      <video src={bgMovie2} autoPlay loop></video>
       <SearchBar
         search={search}
         setSearch={handleSearch}

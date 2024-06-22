@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 // Cookies
 import Cookies from "js-cookie";
+import bgMovie2 from "/img/bg-animate2.mp4";
 
 const Signup = () => {
   const [username, setUsername] = useState("");
@@ -48,8 +49,10 @@ const Signup = () => {
   };
 
   return (
-    <div className="signup container">
+    <div className="signup marvel-bg container">
+      <video src={bgMovie2} autoPlay loop></video>
       <h2>S'inscrire</h2>
+      <div>{/* <FogVanta /> */}</div>
       <section className="signup-section">
         <form onSubmit={handleSubmit}>
           <input

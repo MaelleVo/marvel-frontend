@@ -2,6 +2,8 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
+import bgMovie2 from "/img/bg-animate2.mp4";
+
 // Cookie js
 import Cookies from "js-cookie";
 
@@ -99,6 +101,7 @@ const Comics = () => {
     <span>En cours de chargement...</span>
   ) : (
     <section className="container">
+      <video src={bgMovie2} autoPlay loop></video>
       <SearchBar search={search} setSearch={handleSearch} />
       <div className="button-settings">
         {currentPage > 1 && (
