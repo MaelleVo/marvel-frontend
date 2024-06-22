@@ -104,9 +104,15 @@ const Comics = () => {
       <video src={bgMovie2} autoPlay loop></video>
       <SearchBar search={search} setSearch={handleSearch} />
       <div className="button-settings">
-        {currentPage > 1 && (
-          <button className="button-page" onClick={previousPage}>
-            Précédent
+        {currentPage > 1 ? (
+          <div className="button-holder">
+            <button className="button-page" onClick={previousPage}>
+              Precedent
+            </button>
+          </div>
+        ) : (
+          <button className="button-page hidden" onClick={previousPage}>
+            Precedent
           </button>
         )}
         <span>Page {currentPage}</span>

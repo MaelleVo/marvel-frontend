@@ -120,12 +120,16 @@ const Characters = () => {
         completeMethod={fetchSuggestions}
       />
       <div className="button-settings">
-        {currentPage > 1 && (
+        {currentPage > 1 ? (
           <div className="button-holder">
             <button className="button-page" onClick={previousPage}>
               Precedent
             </button>
           </div>
+        ) : (
+          <button className="button-page hidden" onClick={previousPage}>
+            Precedent
+          </button>
         )}
         <span className="current-page">{currentPage}</span>
         {data && (

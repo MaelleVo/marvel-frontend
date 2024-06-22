@@ -26,6 +26,10 @@ body {
   display: none;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 /* FONTS */
 @font-face {
   font-family: "BlackWidow";
@@ -84,7 +88,7 @@ header img {
 .search-bar input {
   height: 30px;
   border-radius: 5px;
-  width: 800px;
+  width: 500px;
   background-color: #ee291f;
   border: none;
 }
@@ -93,6 +97,10 @@ header img {
   color: white;
   text-align: center;
   padding-left: 10px;
+}
+
+.search-bar input:focus {
+  outline: none;
 }
 
 /* BUTTONS PAGE */
