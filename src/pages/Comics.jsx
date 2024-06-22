@@ -110,18 +110,18 @@ const Comics = () => {
         {currentPage > 1 ? (
           <div className="button-holder">
             <button className="button-page" onClick={previousPage}>
-              Precedent
+              <FontAwesomeIcon icon="arrow-left" />
             </button>
           </div>
         ) : (
           <button className="button-page hidden" onClick={previousPage}>
-            Precedent
+            <FontAwesomeIcon icon="arrow-left" />
           </button>
         )}
         <span className="current-page">{currentPage}</span>
         {data && (
           <button className="button-page" onClick={nextPage}>
-            Suivant
+            <FontAwesomeIcon icon="arrow-right" />
           </button>
         )}
       </div>

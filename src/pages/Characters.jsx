@@ -126,7 +126,7 @@ const Characters = () => {
         {currentPage > 1 ? (
           <div className="button-holder">
             <button className="button-page" onClick={previousPage}>
-              Precedent
+              <FontAwesomeIcon icon="arrow-left" />
             </button>
           </div>
         ) : (
