@@ -292,6 +292,8 @@ video {
 
 .section-favorites {
   display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 /* FOOTER */
