@@ -73,7 +73,7 @@ const Characters = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https://site--marvel-backend--q5cw8vtfqtbn.code.run//characters`,
+          `https://site--marvel-backend--q5cw8vtfqtbn.code.run/characters`,
           {
             params: {
               name: search,
