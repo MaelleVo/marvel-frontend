@@ -127,7 +127,7 @@ const Characters = () => {
             </button>
           </div>
         )}
-        <span>Page {currentPage}</span>
+        <span className="current-page">{currentPage}</span>
         {data && (
           <div className="button-holder">
             <button className="button-page" onClick={nextPage}>
@@ -176,6 +176,7 @@ const Characters = () => {
                     <div>
                       <img src={url} alt={url} />
                       <h3>{result.name}</h3>
+
                       <p>{result.description}</p>
                     </div>
                   </Link>

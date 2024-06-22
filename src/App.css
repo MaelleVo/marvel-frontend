@@ -12,6 +12,11 @@
   display: none;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   width: 1280px;
   margin: 0 auto;
@@ -132,6 +137,10 @@ header img {
   box-shadow: 0 3px 8px 0 #ee291f, 0 17px 50px 0 #ee291f;
 }
 
+.current-page {
+  color: #ee291f;
+}
+
 /* HOME PAGE  */
 
 .marvel-bg {
@@ -233,6 +242,7 @@ video {
   height: 320px;
   background-color: #141414;
   border-radius: 5px;
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
 }
 
 .sticker-characters img {
@@ -251,9 +261,10 @@ video {
 .sticker-characters p {
   font-family: "AvengeanceRegular";
   color: white;
-  text-overflow: ellipsis " [..]";
+  overflow: hidden;
   font-size: 12px;
-  padding: 0 4px;
+  padding: 0 2px;
+  height: 35px;
 }
 
 .top-card-characters {

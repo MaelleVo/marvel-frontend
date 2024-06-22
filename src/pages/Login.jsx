@@ -3,6 +3,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
+import bgMovie2 from "/img/bg-animate2.mp4";
+
 // Cookies
 import Cookies from "js-cookie";
 
@@ -43,6 +45,7 @@ const Login = () => {
 
   return (
     <div className="login container">
+      <video src={bgMovie2} autoPlay loop></video>
       <h2>Se connecter</h2>
 
       <form onSubmit={handleSubmit}>
