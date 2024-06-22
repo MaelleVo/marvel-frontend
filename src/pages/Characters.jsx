@@ -131,7 +131,7 @@ const Characters = () => {
           </div>
         ) : (
           <button className="button-page hidden" onClick={previousPage}>
-            <FontAwesomeIcon icon="arrowRight" />
+            <FontAwesomeIcon icon="arrow-right" />
           </button>
         )}
         <span className="current-page">{currentPage}</span>
