@@ -63,21 +63,23 @@ const Favorites = () => {
             return (
               <div className="wrap-section-favorites" key={comicId}>
                 <div className="comic-card">
-                  {isFavorite(comicId) ? (
-                    <FontAwesomeIcon
-                      icon="heart"
-                      className="heart-favorite"
-                      onClick={() => removeFav(comicId)}
-                      style={{ color: "red" }}
-                    />
-                  ) : (
-                    <FontAwesomeIcon
-                      icon="heart"
-                      className="heart-favorite"
-                      onClick={() => addFav(result)}
-                      style={{ color: "grey" }}
-                    />
-                  )}
+                  <div className="top-card-characters">
+                    {isFavorite(comicId) ? (
+                      <FontAwesomeIcon
+                        icon="heart"
+                        className="heart-favorite"
+                        onClick={() => removeFav(comicId)}
+                        style={{ color: "red" }}
+                      />
+                    ) : (
+                      <FontAwesomeIcon
+                        icon="heart"
+                        className="heart-favorite"
+                        onClick={() => addFav(result)}
+                        style={{ color: "grey" }}
+                      />
+                    )}
+                  </div>
                   <img src={url} alt={result.title} />
                   <p>{result.title}</p>
                   <p>{result.description}</p>

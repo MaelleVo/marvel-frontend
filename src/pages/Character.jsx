@@ -2,6 +2,8 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
+import bgMovie2 from "/img/bg-animate2.mp4";
+
 const Character = () => {
   const { id } = useParams();
   const [character, setCharacter] = useState({});
@@ -29,9 +31,13 @@ const Character = () => {
   }
 
   return isLoading ? (
-    <span>En cours de chargement...</span>
+    <div>
+      <video src={bgMovie2} autoPlay loop></video>
+      <span>En cours de chargement...</span>
+    </div>
   ) : (
-    <section className="container">
+    <section className="section-character container">
+      <video src={bgMovie2} autoPlay loop></video>
       <div className="character-sticker">
         <img src={url} alt={url} />
         <h2>{character.name}</h2>
@@ -47,9 +53,9 @@ const Character = () => {
             "." +
             comic.thumbnail.extension;
           return (
-            <div key={index}>
-              <p> {comic.title} </p>
+            <div key={index} className="comics-character">
               <img src={urlComic} alt={urlComic} />
+              <p> {comic.title} </p>
             </div>
           );
         })}

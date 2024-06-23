@@ -54,6 +54,12 @@ body {
     url("./fonts/DeatheMaachNcv-2ejv.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "CaptainAmerica";
+  src: local("CaptainAmerica"),
+    url("./fonts/AmericanCaptain-MdEY.otf") format("opentype");
+}
+
 /* HEADER */
 
 header {
@@ -94,7 +100,7 @@ header img {
   height: 30px;
   border-radius: 5px;
   width: 500px;
-  background-color: #ee291f;
+  background-color: rgba(238, 41, 31, 0.4);
   border: none;
 }
 
@@ -184,17 +190,79 @@ video {
   object-fit: cover;
 }
 
-/* SIGN UP */
+/* LOGIN & SIGNUP PAGE */
 
-.signup-section {
+.login {
+  height: 84vh;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.signup-section input {
+.form-area {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  gap: 30px;
+  background-color: rgba(238, 41, 31, 0.3);
+  height: 70%;
+  width: 60%;
+  border-radius: 5px;
+}
+
+.form-area h3 {
+  font-family: "BlackWidow";
+  font-size: 40px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.form-area input {
+  border: none;
+  border-bottom: 1px solid #ee291f;
+  background-color: transparent;
+  outline: none;
+  height: 40px;
+  width: 60%;
+}
+
+.form-area input::placeholder {
+  color: #ee291f;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.form-area input:focus {
+  color: #ee291f;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.form-area button {
+  background-color: #ee291f;
+  color: white;
+  border: none;
+  height: 50px;
+  width: 350px;
+  font-family: "BlackWidow";
+  border-radius: 5px;
+  font-size: 22px;
+  margin-top: 40px;
+}
+
+.form-area .button:hover {
+  background-color: #ee291f;
+  transition: 0.7s;
+  box-shadow: 0 3px 8px 0 #ee291f, 0 17px 50px 0 #ee291f;
+}
+
+.form-area .link {
+  text-decoration: none;
+  font-family: "AvengeanceRegular";
+  color: white;
+  opacity: 0.7;
+  margin-top: 20px;
 }
 
 /* COMICS SECTION */
@@ -235,11 +303,11 @@ video {
 }
 
 .comic-card p {
-  font-family: "BlackWidow";
+  font-family: "CaptainAmerica";
   color: white;
   overflow: hidden;
-  font-size: 12px;
-  padding: 0 2px;
+  font-size: 14px;
+  padding: 0 4px;
   height: 35px;
 }
 
@@ -258,9 +326,74 @@ video {
 }
 
 /* CHARACTER STICKER WITH COMICS */
+.character-sticker {
+  margin-top: 20px;
+}
+
+.character-sticker img {
+  border: white 2px solid;
+  border-radius: 5px;
+}
+
+.character-sticker h2 {
+  color: white;
+  font-family: "Death";
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  height: 40px;
+}
+
+.character-sticker p {
+  font-family: "CaptainAmerica";
+  color: white;
+  font-size: 22px;
+  height: 35px;
+  padding: 20px;
+}
+
 .character-list-comics {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  gap: 70px;
+  margin-bottom: 100px;
+}
+
+.character-list-comics p {
+  font-family: "CaptainAmerica";
+  color: white;
+  font-size: 18px;
+  height: 80px;
+  margin-top: 10px;
+}
+
+.comics-character {
+  width: 150px;
+}
+
+/* COMIC DESCRIPTION PAGE */
+.section-comic {
+  height: 84vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.section-comic h2 {
+  font-size: 30px;
+  font-family: "Death";
+  color: white;
+}
+
+.section-comic p {
+  font-family: "CaptainAmerica";
+  font-size: 25px;
+  color: white;
 }
 
 /* CHARACTERS PAGE */
@@ -295,10 +428,10 @@ video {
 }
 
 .sticker-characters p {
-  font-family: "AvengeanceRegular";
+  font-family: "CaptainAmerica";
   color: white;
   overflow: hidden;
-  font-size: 12px;
+  font-size: 16px;
   padding: 0 2px;
   height: 35px;
 }
@@ -318,13 +451,14 @@ video {
 /* FAVORITES */
 
 .page-favorites {
-  height: 84vh;
+  height: 70vh;
 }
 
 .page-favorites h2 {
   font-family: "BlackWidow";
   height: 30px;
   padding-top: 20px;
+  margin-top: 50px;
   font-size: 40px;
   color: #ee291f;
 }
@@ -332,8 +466,10 @@ video {
 .section-favorites {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+  gap: 60px;
   margin-top: 50px;
+  height: 100%;
 }
 
 .wrap-section-favorites {
@@ -355,6 +491,10 @@ footer {
   align-items: center;
   height: 60px;
   background-color: #141414;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 footer p {

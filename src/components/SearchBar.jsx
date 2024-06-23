@@ -1,5 +1,5 @@
 // import { useState } from "react";
-import { AutoComplete } from "primereact/autocomplete";
+// import { AutoComplete } from "primereact/autocomplete";
 
 // const SearchBar = ({ search, setSearch, suggestions, completeMethod }) => {
 //   const [filteredSuggestions, setFilteredSuggestions] = useState([]);
@@ -10,17 +10,17 @@ const SearchBar = ({ search, setSearch, completeMethod }) => {
     completeMethod(event);
   };
 
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-  // };
-
-  const itemTemplate = (item) => {
-    return (
-      <div className="p-clearfix">
-        <div>{item.name}</div>
-      </div>
-    );
+  const handleSubmit = (event) => {
+    event.preventDefault();
   };
+
+  // const itemTemplate = (item) => {
+  //   return (
+  //     <div className="p-clearfix">
+  //       <div>{item.name}</div>
+  //     </div>
+  //   );
+  // };
 
   // const panelFooterTemplate = (options) => {
   //   const { suggestions, completeMethod } = options;
@@ -35,7 +35,8 @@ const SearchBar = ({ search, setSearch, completeMethod }) => {
 
   return (
     <div className="search-bar">
-      <AutoComplete
+      {/* <AutoComplete
+        className="search-bar-input"
         value={search}
         // suggestions={filteredSuggestions}
         completeMethod={completeMethod}
@@ -45,9 +46,9 @@ const SearchBar = ({ search, setSearch, completeMethod }) => {
         onChange={handleSearchChange}
         placeholder="Recherche ici"
         onDropdownClick={(e) => completeMethod(e)}
-      />
+      /> */}
 
-      {/* <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <input
           className="search-bar-input"
           type="text"
@@ -55,7 +56,7 @@ const SearchBar = ({ search, setSearch, completeMethod }) => {
           value={search}
           onChange={handleSearchChange}
         />
-      </form> */}
+      </form>
     </div>
   );
 };

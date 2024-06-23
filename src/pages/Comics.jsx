@@ -101,7 +101,10 @@ const Comics = () => {
   }, []);
 
   return isLoading ? (
-    <span>En cours de chargement...</span>
+    <div>
+      <video src={bgMovie2} autoPlay loop></video>
+      <span>En cours de chargement...</span>
+    </div>
   ) : (
     <section className="container">
       <video src={bgMovie2} autoPlay loop></video>

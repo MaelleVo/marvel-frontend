@@ -47,17 +47,19 @@ const Login = () => {
   };
 
   return (
-    <div className="login container">
+    <div className="login marvel-bg container">
       <video src={bgMovie2} autoPlay loop></video>
-      <h2>Se connecter</h2>
 
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="form-area">
+        <h3>Se Connecter</h3>
+
         <input
           type="email"
           placeholder="Adresse email"
           value={email}
           onChange={handleEmailChange}
         />
+
         <input
           type="password"
           placeholder="Mot de passe"
@@ -67,11 +69,10 @@ const Login = () => {
         <button type="submit" value="Submit" style={{ cursor: "pointer" }}>
           Se connecter
         </button>
+        <Link to="/signup" className="link">
+          <p>Pas encore de compte ? Inscris-toi !</p>
+        </Link>
       </form>
-
-      <Link to="/signup" style={{ textDecoration: "none" }}>
-        <p>Pas encore de compte ? Inscris-toi !</p>
-      </Link>
     </div>
   );
 };

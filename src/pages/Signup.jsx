@@ -52,43 +52,41 @@ const Signup = () => {
   };
 
   return (
-    <div className="signup marvel-bg container">
+    <div className="login marvel-bg container">
       <video src={bgMovie2} autoPlay loop></video>
-      <h2>S'inscrire</h2>
-      <div>{/* <FogVanta /> */}</div>
-      <section className="signup-section">
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            placeholder="Nom d'utilisateur"
-            name="username"
-            value={username}
-            onChange={handleUsernameChange}
-          />
-          <input
-            type="email"
-            placeholder="Email"
-            name="email"
-            value={email}
-            onChange={handleEmailChange}
-          />
-          <input
-            type="password"
-            placeholder="Password"
-            name="password"
-            value={password}
-            onChange={handlePasswordChange}
-          />
-          <button type="submit" value="Submit" style={{ cursor: "pointer" }}>
-            S'inscrire
-          </button>
-          <Link to="/login" style={{ textDecoration: "none" }}>
-            <p className="link-account">
-              Tu as déjà un compte ? Connecte-toi ici !
-            </p>
-          </Link>
-        </form>
-      </section>
+
+      <form onSubmit={handleSubmit} className="form-area">
+        <h3>S'inscrire</h3>
+        <input
+          type="text"
+          placeholder="Nom d'utilisateur"
+          name="username"
+          value={username}
+          onChange={handleUsernameChange}
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          name="email"
+          value={email}
+          onChange={handleEmailChange}
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          name="password"
+          value={password}
+          onChange={handlePasswordChange}
+        />
+        <button type="submit" value="Submit" style={{ cursor: "pointer" }}>
+          S'inscrire
+        </button>
+        <Link to="/login" className="link">
+          <p className="link-account">
+            Tu as deja un compte ? Connecte-toi ici !
+          </p>
+        </Link>
+      </form>
     </div>
   );
 };

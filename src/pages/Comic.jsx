@@ -2,6 +2,8 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
+import bgMovie2 from "/img/bg-animate2.mp4";
+
 const Comic = () => {
   const { id } = useParams();
   const [comic, setComic] = useState({});
@@ -25,7 +27,7 @@ const Comic = () => {
 
   let url;
   if (comic.thumbnail) {
-    url = `${comic.thumbnail.path}/portrait_xlarge.${comic.thumbnail.extension}`;
+    url = `${comic.thumbnail.path}/portrait_incredible.${comic.thumbnail.extension}`;
   }
 
   // const url =
@@ -43,9 +45,13 @@ const Comic = () => {
   // console.log(url);
 
   return isLoading ? (
-    <span>En cours de chargement...</span>
+    <div>
+      <video src={bgMovie2} autoPlay loop></video>
+      <span>En cours de chargement...</span>
+    </div>
   ) : (
-    <section className="container">
+    <section className="section-comic container">
+      <video src={bgMovie2} autoPlay loop></video>
       <img src={url} alt={url} />
       <h2>{comic.title}</h2>
       <p>{comic.description}</p>
