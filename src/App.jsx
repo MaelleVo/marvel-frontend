@@ -25,7 +25,7 @@ import Comic from "./pages/Comic";
 import Character from "./pages/Character";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
-import PageNotFound from "./pages/Page404";
+import PageNotFound from "./pages/PageNotFound";
 
 const App = () => {
   const [search, setSearch] = useState("");
