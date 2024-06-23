@@ -83,7 +83,7 @@ const Signup = () => {
         </button>
         <Link to="/login" className="link">
           <p className="link-account">
-            Tu as deja un compte ? Connecte-toi ici !
+            Tu as deja un compte ? Connectes-toi ici !
           </p>
         </Link>
       </form>

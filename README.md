@@ -1,9 +1,15 @@
-# React + Vite
+# Welcome to the Marvel Project 🦹🏼‍♀️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hi! This a project during my bootcamp with **Le Reacteur**.
+We had to create a react website with a custom API provided by Le Reacteur.
 
-Currently, two official plugins are available:
+## Frontend
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# marvel-frontend
+Using React, Axios & Vite. You can find the website here :
+➡️ **https://marvel-test-tech.netlify.app/**
+
+## Backend
+
+Using Express.js, Mondb Atlas. Deployed on Northflank.
+You can find the link to the backend on github here :  
+**https://github.com/MaelleVo/marvel-backend**
