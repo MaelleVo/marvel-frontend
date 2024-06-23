@@ -97,9 +97,9 @@ header img {
 }
 
 .search-bar input {
-  height: 30px;
+  height: 40px;
   border-radius: 5px;
-  width: 500px;
+  width: 600px;
   background-color: rgba(238, 41, 31, 0.4);
   border: none;
 }
@@ -107,11 +107,18 @@ header img {
 .search-bar input::placeholder {
   color: white;
   text-align: center;
+  font-family: "AvengeanceRegular";
   padding-left: 10px;
+  font-size: 18px;
 }
 
 .search-bar input:focus {
   outline: none;
+  text-align: center;
+  font-family: "AvengeanceRegular";
+  padding-left: 10px;
+  font-size: 18;
+  color: white;
 }
 
 /* BUTTONS PAGE */
@@ -120,7 +127,9 @@ header img {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+  gap: 50px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .button-page {
@@ -158,7 +167,7 @@ header img {
 
 .current-page {
   color: white;
-  font-family: "Death";
+  font-family: "CaptainAmerica";
   font-size: 22px;
 }
 
@@ -403,7 +412,7 @@ video {
   justify-content: space-between;
   gap: 20px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
 }
 
 .sticker-characters {
@@ -422,8 +431,8 @@ video {
   color: white;
   font-family: "Death";
   font-size: 22px;
-  margin-top: 5px;
-  margin-bottom: 12px;
+  margin-top: 15px;
+  margin-bottom: 5px;
   height: 40px;
 }
 
@@ -432,8 +441,8 @@ video {
   color: white;
   overflow: hidden;
   font-size: 16px;
-  padding: 0 2px;
-  height: 35px;
+  padding: 0 10px;
+  height: 30px;
 }
 
 .top-card-characters {

@@ -35,6 +35,15 @@ const SearchBar = ({ search, setSearch, completeMethod }) => {
 
   return (
     <div className="search-bar">
+      <form onSubmit={handleSubmit}>
+        <input
+          className="search-bar-input"
+          type="text"
+          placeholder="Recherche ici"
+          value={search}
+          onChange={handleSearchChange}
+        />
+      </form>
       {/* <AutoComplete
         className="search-bar-input"
         value={search}
@@ -47,16 +56,6 @@ const SearchBar = ({ search, setSearch, completeMethod }) => {
         placeholder="Recherche ici"
         onDropdownClick={(e) => completeMethod(e)}
       /> */}
-
-      <form onSubmit={handleSubmit}>
-        <input
-          className="search-bar-input"
-          type="text"
-          placeholder="Recherche ici"
-          value={search}
-          onChange={handleSearchChange}
-        />
-      </form>
     </div>
   );
 };
