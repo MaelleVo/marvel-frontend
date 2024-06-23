@@ -1,5 +1,4 @@
 import bgMovie from "/img/bg-animate.mp4";
-// import Background from "../components/Background";
 
 const Home = () => {
   return (

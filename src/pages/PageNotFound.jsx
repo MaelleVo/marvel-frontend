@@ -1,4 +1,4 @@
-const Page404 = () => {
+const PageNotFound = () => {
   return (
     <section className="section-404">
       <img src="/img/404.jpg" alt="img-404" />
@@ -6,4 +6,4 @@ const Page404 = () => {
   );
 };
 
-export default Page404;
+export default PageNotFound;
