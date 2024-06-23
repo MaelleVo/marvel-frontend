@@ -1,9 +1,4 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Redirect,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import { useState } from "react";
 
@@ -51,8 +46,7 @@ const App = () => {
           <Route path="/favorites" element={<Favorites />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/404" element={<PageNotFound />} />
-          <Redirect to="/404" />
+          <Route path="/*" element={<PageNotFound />} />
         </Routes>
         <Footer />
       </div>
