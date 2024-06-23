@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // Import Components
 import SearchBar from "../components/SearchBar";
 
-import bgMovie2 from "/img/bg-animate2.mp4";
+import bgMovie2 from "/img/bg-animat.mp4";
 
 const Characters = () => {
   const [data, setData] = useState();

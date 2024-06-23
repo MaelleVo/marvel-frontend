@@ -7,7 +7,7 @@ import Cookies from "js-cookie";
 // Font Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import bgMovie2 from "/img/bg-animate2.mp4";
+import bgMovie2 from "/img/bg-animat.mp4";
 
 const Favorites = () => {
   const token = Cookies.get("token");

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 // Cookies
 import Cookies from "js-cookie";
-import bgMovie2 from "/img/bg-animate2.mp4";
+import bgMovie2 from "/img/bg-animat.mp4";
 
 const Signup = () => {
   const [username, setUsername] = useState("");

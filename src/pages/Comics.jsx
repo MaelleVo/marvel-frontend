@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import bgMovie2 from "/img/bg-animate2.mp4";
+import bgMovie2 from "/img/bg-animat.mp4";
 
 // Cookie js
 import Cookies from "js-cookie";
