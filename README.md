@@ -16,6 +16,6 @@ You can find the link to the backend on github here :
 
 ## Errors currently being fix ⛔️
 
-Trying to fix on mozilla the background video that is not displayed..
+Trying to fix on Firefox Mozilla the background video that is not displayed..
 
 ➡️ For better experience use google chrome. Thanks.
